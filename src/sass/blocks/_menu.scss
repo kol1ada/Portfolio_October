@@ -1,0 +1,110 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #FFFFFF;
+    }
+    span.long {
+        width: 36px;
+    } 
+}
+
+.menu {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s;
+    &.active {
+        left: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        z-index: 10;
+        position: relative;
+        width: 345px;
+        height: 100%;
+        padding-top: 140px;
+        padding-left: 40px;
+        background-color: $main-color;
+        transition: all .6s;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+    &__link {
+        position: relative;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 10px;
+
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            border: 1px solid $text-color;
+        }
+        &:hover {
+            &:before {
+                transition: all .4s;
+                background-color: $text-color;
+                border-radius: 0
+            }
+        }
+        a {
+            color: $text-color;
+            text-decoration: none;
+        }
+    }
+    &__social {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $text-color;
+        opacity: 0.7;
+    }
+}
+
+
+

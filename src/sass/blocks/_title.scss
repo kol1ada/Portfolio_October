@@ -1,0 +1,21 @@
+.title {
+    color: $black-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz14 {
+        font-size: 14px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+    &_fz96 {
+        font-size: 96px;
+        span {
+            font-weight: 500;
+            font-size: 52px;
+        }
+    }
+} 
