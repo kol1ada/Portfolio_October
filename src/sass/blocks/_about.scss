@@ -14,7 +14,48 @@
             width: 100%;
         }
     }
+    &__descr {
+        padding-top: 6px;
+        
+        .divider {
+            margin: 0;
+        }
+    }
     &__title {
-        @include before_circle
+        position: relative;
+        @include before_circle;
+        padding: 1px 0 0 12px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__skills {
+        display: grid;
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2,260px);
+        grid-auto-rows: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        &-item {
+            display: grid;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
+        }
+        &-circle {
+            position: relative;
+            @include before_circle;
+            padding: 15px 0 0 15px;
+            &:before {
+                top: 0;
+            }
+        }
+        &-text {
+            margin-top: 6px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 }

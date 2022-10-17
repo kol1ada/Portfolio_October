@@ -15,11 +15,20 @@
     margin: 0 auto;
 }
 
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+}
+
 @import 'blocks/menu';
 @import 'blocks/title';
 @import 'blocks/promo';
 @import 'blocks/button';
 @import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';
 @import 'blocks/sidepanel';
 
 
