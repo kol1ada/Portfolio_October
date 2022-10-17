@@ -1,3 +1,60 @@
 .skills {
     padding-top: 120px;
+    &__wrapper {      
+        padding: 60px 10px 120px 10px; 
+    }
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: 270px;
+        grid-gap: 13px;
+    }
+    &__item {
+        padding: 35px 29px 25px 30px;
+        border: 1px solid $black-color;
+        border-radius: 10px;
+        &-logo {
+            max-width: 55px;
+            img {
+                width: 55px;
+            }
+        }
+        &-title {
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+        }
+        &-body {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .statistic {
+        &__wrapper {
+            padding-bottom: 120px;
+        }
+        &__column {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: 70px;
+            grid-gap: 30px;
+        }
+        &__item {
+            &-head {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 500;
+                font-size: 14px;
+                position: relative;
+                @include before_circle
+
+            }
+            &-title {
+                margin-right: 15px;
+            }
+
+        }
+    }
 }
