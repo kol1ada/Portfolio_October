@@ -11,3 +11,16 @@
         left: 0px;
     }
 }
+@mixin before_circle-litle {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+        z-index: 5;
+        top: 20%;
+        left: -7%;
+    }
+}

@@ -15,6 +15,11 @@ closeOverlay.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+const percent = document.querySelectorAll('.statistic__item-percent'),
+      lines = document.querySelectorAll('.statistic__item-line span');
 
+percent.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+})
 
 

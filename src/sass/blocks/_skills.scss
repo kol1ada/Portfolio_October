@@ -5,8 +5,7 @@
     }
     &__column {
         display: grid;
-        grid-template-columns: repeat(4, 270px);
-        grid-template-rows: 270px;
+        grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
         grid-gap: 13px;
     }
     &__item {
@@ -37,14 +36,15 @@
         }
         &__column {
             display: grid;
-            grid-template-columns: repeat(3, 350px);
-            grid-template-rows: 70px;
-            grid-gap: 30px;
-        }
+            grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+            column-gap: 45px;
+            row-gap: 35px;
+        }   
         &__item {
             &-head {
                 display: flex;
                 justify-content: space-between;
+                align-items: space-between;
                 font-weight: 500;
                 font-size: 14px;
                 position: relative;
@@ -52,7 +52,20 @@
 
             }
             &-title {
-                margin-right: 15px;
+                padding: 1px 0 0 13px;
+            }
+            &-line {
+                margin-top: 20px;
+                width: 350px;
+                height: 14px;
+                background-color: #E8E4DE;
+                border-radius: 4px;
+                span {
+                    display: block;
+                    height: 100%;
+                    background-color: $main-color;
+                    border-radius: 4px;
+                }
             }
 
         }

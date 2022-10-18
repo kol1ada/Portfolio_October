@@ -1,0 +1,34 @@
+.pricelist {
+    margin-top: 60px;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, minmax(44px, auto)) / repeat(2, 380px);
+        justify-content: space-between;
+
+    }
+    &__item {
+        &-head {
+            position: relative;
+
+            margin-top: 15px;
+            display: flex;
+            align-items: space-between;
+            justify-content: space-between;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            @include before_circle-litle;
+        }
+        &-body {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-price {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
