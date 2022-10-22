@@ -7,10 +7,12 @@
         justify-content: space-between;
     }
     &__photo {
+        max-height: 604px;
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
         }
     }
     &__descr {

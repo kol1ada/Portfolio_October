@@ -159,15 +159,9 @@
 
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <!-- <img src="img/main-photo.jpg" alt="koliada oleksii photo" 
-                    srcset="img/main-photo-min.jpg 300w,
-                            img/main-photo.jpg 400w"
-                    sizes="(max-width: 576px) 280px,
-                           (max-width: 577px) 400px"
-                    class="about__photo"> -->
                     <picture>
-                        <!-- <source media="(max-width: 576px)" srcset="img/main-photo.jpg">
-                        <source media="(min-width: 577px)" srcset="img/main_photo-min.jpg"> -->
+                        <source media="(min-width: 769px)" srcset="img/main-photo.jpg">
+                        <source media="(max-width: 768px)" srcset="img/main_photo-min.jpg">
                         <img src="img/main-photo.jpg" alt="">
                     </picture>
                 </div>
@@ -467,7 +461,7 @@
 
         </div>
     </section>
-<!-- 
+
     <section class="portfolio">
         <div class="container">
 
@@ -567,7 +561,12 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/foother_photo.png" alt="Koliada.fr photo" class="about__photo">
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="img/foother_photo-min.png">
+                        <source media="(min-width: 1201px)" srcset="img/foother_photo.png">
+
+                        <img src="img/foother_photo.png" alt="Koliada.fr photo" class="about__photo">
+                    </picture>
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title">Contacts</h2>
@@ -616,7 +615,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>

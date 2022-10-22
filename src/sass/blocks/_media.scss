@@ -46,6 +46,28 @@
             }
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-template-rows: 280px;
+            justify-content: center;
+            gap: 12px;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .pricelist {
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 250px 585px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -87,6 +109,21 @@
             }
         }
     }
+    .pricelist {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 330px);
+            padding: 0;
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 585px;
+            picture {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -118,7 +155,7 @@
             grid-row: unset;
         }
         &__wrapper {
-            grid-template: 800px auto auto / 1fr ;
+            grid-template: 400px auto auto / 1fr ;
         }
         &__skills {
             grid-template-columns: repeat(2,260px);
@@ -126,6 +163,29 @@
                 grid-template-columns: 40px 200px;
                 gap: 20px;
             }
+        }
+    }
+    .pricelist {
+        &__wrapper {
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        &__item {
+            &-head {
+                margin-top: 20px;
+            }
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 315px;
+            picture {
+                display: none;
+            }
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 230px);
         }
     }
 }
@@ -188,6 +248,32 @@
                     max-width: 260px;
                 }
             }
+        }
+    }
+    .pricelist {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 270px);
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            justify-content: center;
+        }
+        &__descr {
+            width: 280px;
+        }
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
         }
     }
 }
