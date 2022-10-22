@@ -44,10 +44,11 @@
             &-head {
                 display: flex;
                 justify-content: space-between;
-                align-items: space-between;
+                align-items: center;
                 font-weight: 500;
                 font-size: 14px;
                 position: relative;
+                max-width: 350px;
                 @include before_circle
 
             }

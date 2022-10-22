@@ -167,16 +167,26 @@
             grid-template-columns: 1fr;
         }
     }
-    .skills {
+    .skills {        
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &__column {
-            // grid-template: repeat(10,minmax(170px))/repeat(1,170px);
-            // display: none;
-
-            
+            display: flex;
+            flex-direction: column;
+            max-width: 270px;
         }
         .statistic {
             &__column {
-                // grid-template: repeat(5,minmax(70px,auto))/repeat(1,350px);
+                grid-template: repeat(5,minmax(70px,auto))/repeat(1,250px);
+            }
+            &__item {
+                max-width: 280px;
+                &-line {
+                    max-width: 260px;
+                }
             }
         }
     }

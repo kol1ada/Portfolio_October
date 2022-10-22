@@ -159,7 +159,17 @@
 
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main-photo.jpg" alt="koliada oleksii photo" class="about__photo">
+                    <!-- <img src="img/main-photo.jpg" alt="koliada oleksii photo" 
+                    srcset="img/main-photo-min.jpg 300w,
+                            img/main-photo.jpg 400w"
+                    sizes="(max-width: 576px) 280px,
+                           (max-width: 577px) 400px"
+                    class="about__photo"> -->
+                    <picture>
+                        <!-- <source media="(max-width: 576px)" srcset="img/main-photo.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo-min.jpg"> -->
+                        <img src="img/main-photo.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">About me</h2>
