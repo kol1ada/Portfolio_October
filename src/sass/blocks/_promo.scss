@@ -1,7 +1,8 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../../img/main-background.jpg') no-repeat 50%/cover;
+    background: url('../img/main-background.jpg') no-repeat 50%/cover;
+    // background: url('img/foother_photo-min.png') no-repeat 50%/cover;
     padding-top: 205px;
     &__title {
         max-width: 535px;
